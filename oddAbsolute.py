@@ -1,19 +1,13 @@
 def calculateAbsolute():
-    
+
     # This first line is provided for you
-    in_num = int(input("Enter a number: "))
-    n = in_num
-    #print(n)
-    x = n - 21
-    #print(x)
-    import math 
-    abs_x = math.fabs(x)
-    if n > 21:
-        z = abs_x * 2
+    import math
+    n = int(input("Enter a number: "))
+    if n <= 21:
+        x = abs(n-21)
     else:
-        z = abs_x
-    z = int(z)
-    print('Result:', z)
+        x = (abs(n-21))*2
+    print(f"Result: {x}")
 
     # end assignment
 
